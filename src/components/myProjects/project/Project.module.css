@@ -1,0 +1,15 @@
+.wrapper {
+    border: 1px solid;
+    background-color: blue;
+}
+
+.imgProject {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+
+}

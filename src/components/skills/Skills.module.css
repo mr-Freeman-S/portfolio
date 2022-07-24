@@ -2,14 +2,6 @@
     height: 100vh;
     background-color: darkcyan;
 }
-.container {
-    flex-direction: column;
-    justify-content: flex-start;
-}
-.title {
-    background-color: aqua;
-
-}
 
 .skills {
     border: 1px solid;
