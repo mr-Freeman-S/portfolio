@@ -1,0 +1,14 @@
+.wrapper {
+    height: 20vh;
+    background-color: green;
+}
+.container {
+    flex-direction: column;
+
+}
+.itemsWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    border: 1px solid;
+}
