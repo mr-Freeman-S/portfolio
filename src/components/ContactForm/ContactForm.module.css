@@ -1,0 +1,28 @@
+.wrapper {
+    height: 100vh;
+    background-color: darkkhaki;
+}
+
+.formWrapper {
+    flex-direction: column;
+}
+
+.form {
+    flex-direction: column;
+    display: flex;
+    border: 1px solid;
+    height: 300px;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.name {
+height: 40px;
+}
+.email {
+    height: 40px;
+}
+.message {
+    height: 120px;
+
+}

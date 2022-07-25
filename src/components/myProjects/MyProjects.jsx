@@ -11,6 +11,7 @@ const MyProjects = () => {
                 <h2 className={styleTitle.title}>Projects</h2>
                 <div className={style.projectWrapper}>
                     <Project img={'img1'} projectName={'social network'} shortDescription={'bla bal asdasdas fdasfas afasf aaaaaaa'}/>
+                    <Project img={'img1'} projectName={'social network'} shortDescription={'bla bal asdasdas fdasfas afasf aaaaaaa'}/>
                     <Project img={'img1'} projectName={'cards'} shortDescription={'blaasf aaaaaaa'}/>
                 </div>
             </div>
