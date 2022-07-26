@@ -6,7 +6,7 @@ import styleContainer from "../../common/styles/Container.module.css"
 const AboutMe = () => {
     return (
         <div className={style.about}>
-            <div className={styleContainer.wrapper}>
+            <div className={`${styleContainer.wrapper} ${style.container}`}>
             <div className={style.text}>
                 <p>Hi there</p>
                 <h1>I'm Slava Baranok</h1>

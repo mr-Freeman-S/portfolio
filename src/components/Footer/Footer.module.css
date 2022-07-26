@@ -9,6 +9,6 @@
 .itemsWrapper {
     display: flex;
     justify-content: space-between;
-    width: 500px;
     border: 1px solid;
+    width: 60%;
 }

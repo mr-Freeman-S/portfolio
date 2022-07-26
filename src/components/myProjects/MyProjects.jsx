@@ -13,6 +13,7 @@ const MyProjects = () => {
                     <Project img={'img1'} projectName={'social network'} shortDescription={'bla bal asdasdas fdasfas afasf aaaaaaa'}/>
                     <Project img={'img1'} projectName={'social network'} shortDescription={'bla bal asdasdas fdasfas afasf aaaaaaa'}/>
                     <Project img={'img1'} projectName={'cards'} shortDescription={'blaasf aaaaaaa'}/>
+                    <Project img={'img1'} projectName={'cards'} shortDescription={'blaasf aaaaaaa'}/>
                 </div>
             </div>
         </div>
