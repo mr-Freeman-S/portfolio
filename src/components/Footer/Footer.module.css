@@ -1,11 +1,14 @@
 .wrapper {
     height: 20vh;
     background-color: green;
+    min-height: 200px;
 }
+
 .container {
     flex-direction: column;
 
 }
+
 .itemsWrapper {
     display: flex;
     justify-content: space-between;
