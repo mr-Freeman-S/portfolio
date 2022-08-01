@@ -2,6 +2,8 @@
 .wrapper {
     height: 100vh;
     background-color: darkcyan;
+    display: flex;
+    align-items: center;
 }
 .container {
     flex-direction: column;
