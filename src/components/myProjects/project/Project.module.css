@@ -4,17 +4,18 @@
     width: 250px;
 }
 
-.imgProject {
-
+.imgContainer {
     height: 150px;
-    width: 190px;
+    width: 100%;
+    background-color: goldenrod;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: max-content;
 }
 
 .title {
-
+ background-color: beige;
 }
-
+.description {
+    background-color: beige;
+}

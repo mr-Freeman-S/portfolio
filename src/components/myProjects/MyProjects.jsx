@@ -12,7 +12,7 @@ const MyProjects = () => {
                 <div className={style.projectWrapper}>
                     <Project img={'img1'} projectName={'social network'} shortDescription={'bla bal asdasdas fdasfas afasf aaaaaaa'}/>
                     <Project img={'img1'} projectName={'social network'} shortDescription={'bla bal asdasdas fdasfas afasf aaaaaaa'}/>
-                    <Project img={'img1'} projectName={'cards'} shortDescription={'blaasf aaaaaaa'}/>
+                    <Project img={'img1'} projectName={'cards'} shortDescription={'blaasf aadsad sadas dsa das dsa dsa dsad as das dsa das dsa dsa das dsad as dsa dasdas das d asd sadasdas dsadasdasaaaaa'}/>
                     <Project img={'img1'} projectName={'cards'} shortDescription={'blaasf aaaaaaa'}/>
                 </div>
             </div>

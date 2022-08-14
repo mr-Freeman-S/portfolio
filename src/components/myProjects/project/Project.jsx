@@ -1,14 +1,16 @@
 import React from 'react';
 import style from './Project.module.css'
+import {Link} from "react-router-dom";
 
 const Project = (props) => {
     return (
         <div className={style.wrapper}>
-            <div className={style.imgProject}>
-                <button>View</button>
+            <div className={style.imgContainer}>
+                <Link className={style.link} to={{ pathname: "#" }} target="_blank" >View</Link>
+
             </div>
             <h2 className={style.title}>{props.projectName}</h2>
-            <div>{props.shortDescription}</div>
+            <span className={style.description}>{props.shortDescription}</span>
         </div>
     );
 };
