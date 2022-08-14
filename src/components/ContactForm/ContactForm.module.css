@@ -1,6 +1,8 @@
 .wrapper {
     height: 100vh;
     background-color: darkkhaki;
+    display: flex;
+    align-items: center;
 }
 
 .formWrapper {
@@ -14,6 +16,8 @@
     height: 300px;
     justify-content: space-between;
     width: 60%;
+    min-width: 277px;
+    max-width: 450px;
 }
 
 .name {
