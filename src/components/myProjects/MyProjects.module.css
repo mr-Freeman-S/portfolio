@@ -1,6 +1,8 @@
 .wrapper {
     min-height: 100vh;
     background-color: #d71616;
+    display: flex;
+    align-items: center;
 
 }
 .projectWrapper {
@@ -9,11 +11,11 @@
     width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
+    row-gap: 1rem;
 }
 .container {
     flex-direction: column;
     justify-content: flex-start;
-    min-height: 100vh;
 
 }
 @media screen and (max-width: 750px) {
