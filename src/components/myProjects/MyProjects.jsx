@@ -1,7 +1,7 @@
 import React from 'react';
-import style from './MyProjects.module.css'
-import styleContainer from "../../common/styles/Container.module.css";
-import styleTitle from "../../common/styles/Title.module.css";
+import style from './MyProjects.module.scss'
+import styleContainer from "../../common/styles/Container.module.scss";
+import styleTitle from "../../common/styles/Title.module.scss";
 import Project from "./project/Project";
 
 const MyProjects = () => {
