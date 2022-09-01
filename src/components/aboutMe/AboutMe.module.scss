@@ -1,14 +1,29 @@
+@import "src/common/styles/sass/varialbles";
 
 .about {
-  height: 100vh;
-  background-color: aquamarine;
+  min-height: 100vh;
+  background-color: $backGroundColor;
   display: flex;
   flex-direction: column;
 
   .text {
-    width: 300px;
     background-color: blueviolet;
     max-width: fit-content;
+
+    h4 {
+      color: $textMainColor;
+      font-size: 32px;
+      font-weight: 400;
+      letter-spacing: .3px;
+
+    }
+
+    h1 {
+      color: $textMainColor;
+      font-size: 70px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
   }
 
   .photo {

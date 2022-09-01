@@ -1,5 +1,5 @@
+@import "src/common/styles/sass/varialbles";
 .nav {
-    border: 1px solid goldenrod;
     width: 300px;
     display: flex;
     justify-content: space-between;
@@ -7,6 +7,8 @@
     font-size: 15px;
     font-weight: 400;
     line-height: 1.95;
-    color: #e6e6e6;
-
+    a{
+        color: $textPrimaryColor;
+        text-decoration: none;
+    }
 }
