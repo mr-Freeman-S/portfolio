@@ -2,14 +2,20 @@
 
 .about {
   min-height: 100vh;
-  background-color: $backGroundColor;
   display: flex;
   flex-direction: column;
+  .videoBg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+  }
 
   .text {
-    background-color: blueviolet;
     max-width: fit-content;
-
+    font-family: $firstFont;
+    text-align: center;
     h4 {
       color: $textMainColor;
       font-size: 32px;
@@ -35,6 +41,7 @@
 
   .container {
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 

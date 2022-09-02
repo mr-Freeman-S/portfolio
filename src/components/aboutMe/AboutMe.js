@@ -2,7 +2,7 @@ import React from 'react';
 import style from "./AboutMe.module.scss"
 import styleContainer from "../../common/styles/Container.module.scss"
 import Header from "../Header/Header";
-
+import videoBG from "./../../assets/video/videoBG.mp4"
 
 
 const AboutMe = () => {
@@ -11,12 +11,12 @@ const AboutMe = () => {
             <Header/>
             <div className={`${styleContainer.wrapper} ${style.container}`}>
                 <div className={style.text}>
-                    <h4>Hi there</h4>
-                    <h1>I'm Slava Baranok</h1>
-                    <h4>I'm frontend developer</h4>
+                    <h1>Slava Baranok</h1>
+                    <h4>I’m Frontend Dev</h4>
                 </div>
-                <div className={style.photo}></div>
             </div>
+            <video src={videoBG} className={style.videoBg} autoPlay loop muted>
+            </video>
         </div>
     );
 };
