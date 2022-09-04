@@ -1,14 +1,16 @@
 import './App.css';
 import Header from "./components/Header/Header";
-import AboutMe from "./components/aboutMe/AboutMe";
+import Main from "./components/main/Main";
 import Skills from "./components/skills/Skills";
 import MyProjects from "./components/myProjects/MyProjects";
 import ContactForm from "./components/ContactForm/ContactForm";
 import Footer from "./components/Footer/Footer";
+import AboutMe from "./components/aboutMe/aboutMe";
 
 function App() {
     return (
         <div className="App">
+            <Main/>
             <AboutMe/>
             <Skills/>
             <MyProjects/>

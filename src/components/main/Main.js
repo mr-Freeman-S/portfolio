@@ -1,11 +1,11 @@
 import React from 'react';
-import style from "./AboutMe.module.scss"
+import style from "./Main.module.scss"
 import styleContainer from "../../common/styles/Container.module.scss"
 import Header from "../Header/Header";
 import videoBG from "./../../assets/video/videoBG.mp4"
 
 
-const AboutMe = () => {
+const Main = () => {
     return (
         <div className={style.about}>
             <Header/>
@@ -21,4 +21,4 @@ const AboutMe = () => {
     );
 };
 
-export default AboutMe;
+export default Main;

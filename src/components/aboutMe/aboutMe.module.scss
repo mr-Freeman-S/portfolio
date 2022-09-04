@@ -1,0 +1,67 @@
+@import "src/common/styles/sass/varialbles";
+
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-color: $backGroundColor;
+  color: $textMainColor;
+
+  .container {
+    margin: 70px auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    .titleWrapper {
+      display: flex;
+      flex-direction: inherit;
+    }
+
+    .infoWrapper {
+      display: flex;
+
+      .imgContainer {
+        height: 440px;
+        min-width: 340px;
+        object-fit: cover;
+        background-color: #009e66;
+        padding: 0 15px;
+      }
+
+      .infoContent {
+      padding: 0 15px;
+        .descriptionContainer {
+        }
+
+        address {
+          .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .boxContent {
+              display: flex;
+              align-items: center;
+              min-width: 50%;
+              span{
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+        .CVContent {
+          background-color: #d71616;
+          a{
+            text-decoration: none;
+
+          }
+          ul{
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}
