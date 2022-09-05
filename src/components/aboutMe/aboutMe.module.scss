@@ -53,12 +53,23 @@
         }
         .CVContent {
           background-color: #d71616;
+          display: flex;
+          align-items: center;
           a{
             text-decoration: none;
 
           }
           ul{
             display: flex;
+            list-style: none;
+            li{
+              .icon{
+
+                &::before {
+                  content: '';
+                }
+              }
+            }
           }
         }
       }

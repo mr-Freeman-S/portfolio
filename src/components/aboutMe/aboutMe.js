@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './aboutMe.module.scss'
 import styleContainer from "../../common/styles/Container.module.scss"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 
 const AboutMe = () => {
@@ -51,7 +52,7 @@ const AboutMe = () => {
                         <div className={style.CVContent}>
                             <a href="#">Download CV</a>
                             <ul>
-                                <li><a href="#">1</a></li>
+                                <li><a className={style.icon} href="#"><FontAwesomeIcon icon="fa-brands fa-github" /></a></li>
                                 <li><a href="#">1</a></li>
                                 <li><a href="#">1</a></li>
                                 <li><a href="#">1</a></li>
