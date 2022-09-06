@@ -2,7 +2,7 @@ import React from 'react';
 import style from './aboutMe.module.scss'
 import styleContainer from "../../common/styles/Container.module.scss"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-
+import {faGithub, faInstagram, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 
 const AboutMe = () => {
     return (
@@ -51,13 +51,11 @@ const AboutMe = () => {
                         </address>
                         <div className={style.CVContent}>
                             <a href="#">Download CV</a>
-                            <ul>
-                                <li><a className={style.icon} href="#"><FontAwesomeIcon icon="fa-brands fa-github" /></a></li>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">1</a></li>
 
+                            <ul>
+                                <li><a className={style.icon} href="https://github.com/mr-Freeman-S" target={"_blank"}><FontAwesomeIcon icon={faGithub} size={'xl'}/></a></li>
+                                <li><a href="https://www.instagram.com/mr.baranok" target={"_blank"}><FontAwesomeIcon icon={faInstagram} size={'xl'}/></a></li>
+                                <li><a href="https://www.linkedin.com/in/slava-baranok" target={"_blank"}><FontAwesomeIcon icon={faLinkedin} size={'xl'}/></a></li>
                             </ul>
                         </div>
                     </div>
