@@ -1,0 +1,25 @@
+@import 'src/common/styles/sass/varialbles';
+.App {
+    font-family: $firstFont;
+    color: #9f9f9f;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.95;
+    overflow: hidden;
+    position: relative;
+
+    a{
+        text-decoration: none;
+        color: $geometryFigureColor;
+    }
+    address {
+        font-style: normal;
+    }
+    p{
+        color: $textSecondaryColor;
+        margin-top: 0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 0;
+    }
+}

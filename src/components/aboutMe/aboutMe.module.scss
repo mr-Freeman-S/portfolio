@@ -17,6 +17,52 @@
     .titleWrapper {
       display: flex;
       flex-direction: inherit;
+      margin-bottom: 83px;
+
+      .title {
+        font-size: 46px;
+        margin-bottom: 37px;
+      }
+
+      .preTitle {
+        margin: 0 auto 17px;
+        font-size: 15px;
+      }
+
+      .barAnimation {
+        background-color: $geometryFigureColor;
+        content: '';
+        display: block;
+        height: 4px;
+        left: 0;
+        margin: 0 auto 0 auto;
+        position: relative;
+        right: 0;
+        width: 75px;
+
+        &::before, &::after {
+          -webkit-animation-duration: 3s;
+          -webkit-animation-iteration-count: infinite;
+          -webkit-animation-name: barAnimation;
+          -webkit-animation-timing-function: linear;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-name: barAnimation;
+          animation-timing-function: linear;
+          background-color: #101010;
+          content: '';
+          height: 100%;
+          position: absolute;
+          top: 0;
+          width: 4px;
+        }
+        &::before{
+          left: 8px;
+        }
+        &::after {
+          left: 0;
+        }
+      }
     }
 
     .infoWrapper {
@@ -31,11 +77,29 @@
       }
 
       .infoContent {
-      padding: 0 15px;
+        padding: 0 15px;
+
+        .question {
+          color: $geometryFigureColor;
+          font-size: 24px;
+          margin-bottom: 15px;
+        }
+
+        .answer {
+          font-size: 31px;
+          font-weight: 700;
+          line-height: 1.6;
+          margin-bottom: 16px;
+        }
+
         .descriptionContainer {
+          padding-bottom: 29px;
+          border-bottom: 2px solid rgba(255, 255, 255, .08);
         }
 
         address {
+          padding: 29px 0;
+
           .row {
             display: flex;
             flex-wrap: wrap;
@@ -45,26 +109,57 @@
               display: flex;
               align-items: center;
               min-width: 50%;
-              span{
+
+              .value {
+                margin-bottom: 0;
+              }
+
+              span {
                 margin-right: 10px;
               }
             }
           }
         }
+
         .CVContent {
-          background-color: #d71616;
           display: flex;
           align-items: center;
-          a{
-            text-decoration: none;
 
+          .buttonCV {
+            text-decoration: none;
+            background-color: $geometryFigureColor;
+            margin-right: 23px;
+            padding: 10px 35px;
+            border-radius: 30px;
+            color: $textMainColor;
+            font-size: 14px;
+            border: 1px solid #009e66;
           }
-          ul{
+
+          ul {
             display: flex;
             list-style: none;
             color: #009e66;
-            li{
+            align-items: center;
+            padding-left: 0;
+
+            &::before {
+              background-color: rgba(255, 255, 255, .25);
+              content: '';
+              height: 2px;
+              margin-right: 23px;
+              width: 60px;
+            }
+
+
+            li {
+
               margin-right: 10px;
+
+              a {
+                color: $iconsColor;
+                font-size: 21px;
+              }
             }
           }
         }

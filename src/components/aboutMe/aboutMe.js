@@ -9,16 +9,16 @@ const AboutMe = () => {
         <div className={style.wrapper}>
             <div className={`${styleContainer.wrapper} ${style.container}`}>
                 <div className={style.titleWrapper}>
-                    <p>get to know me</p>
-                    <h2>About me</h2>
-
+                    <p className={style.preTitle}>Get to know me</p>
+                    <h2 className={style.title}>About me</h2>
+                    <div className={style.barAnimation}></div>
                 </div>
                 <div className={style.infoWrapper}>
                     <div className={style.imgContainer}>
                     </div>
                     <div className={style.infoContent}>
-                        <h2>Who am i?</h2>
-                        <h6>I'm Slava Baranok, a Web Developer</h6>
+                        <h2 className={style.question}>Who am i?</h2>
+                        <h6 className={style.answer}>I'm Slava Baranok, a Web Developer</h6>
                         <div className={style.descriptionContainer}><p>I am a freelancer based in the United Kingdom and
                             i have been building noteworthy UX/UI
                             designs and websites for years, which comply with the latest design trends. I help convert a
@@ -29,33 +29,36 @@ const AboutMe = () => {
                             <div className={style.row}>
                                 <div className={style.boxContent}>
                                     <span>Name:</span>
-                                    <p>Slava Baranok</p>
+                                    <p className={style.value}>Slava Baranok</p>
                                 </div>
                                 <div className={style.boxContent}>
                                     <span>Email:</span>
-                                    <p><a href="#">mr.baramok.slava@gmail.com</a></p>
+                                    <p className={style.value}><a href="#">mr.baramok.slava@gmail.com</a></p>
                                 </div>
                                 <div></div>
                             </div>
                             <div className={style.row}>
                                 <div className={style.boxContent}>
                                     <span>Age:</span>
-                                    <p>30</p>
+                                    <p className={style.value}>30</p>
                                 </div>
                                 <div className={style.boxContent}>
                                     <span>From:</span>
-                                    <p>Minsk, Belarus</p>
+                                    <p className={style.value}>Minsk, Belarus</p>
                                 </div>
                                 <div></div>
                             </div>
                         </address>
                         <div className={style.CVContent}>
-                            <a href="#">Download CV</a>
+                            <a className={style.buttonCV} href="#">Download CV</a>
 
                             <ul>
-                                <li><a className={style.icon} href="https://github.com/mr-Freeman-S" target={"_blank"}><FontAwesomeIcon icon={faGithub} size={'xl'}/></a></li>
-                                <li><a href="https://www.instagram.com/mr.baranok" target={"_blank"}><FontAwesomeIcon icon={faInstagram} size={'xl'}/></a></li>
-                                <li><a href="https://www.linkedin.com/in/slava-baranok" target={"_blank"}><FontAwesomeIcon icon={faLinkedin} size={'xl'}/></a></li>
+                                <li><a href="https://github.com/mr-Freeman-S" target={"_blank"} rel="noreferrer"><FontAwesomeIcon
+                                    icon={faGithub}/></a></li>
+                                <li><a href="https://www.instagram.com/mr.baranok" target={"_blank"} rel="noreferrer"><FontAwesomeIcon
+                                    icon={faInstagram}/></a></li>
+                                <li><a href="https://www.linkedin.com/in/slava-baranok"
+                                       target={"_blank"} rel="noreferrer"><FontAwesomeIcon icon={faLinkedin}/></a></li>
                             </ul>
                         </div>
                     </div>
