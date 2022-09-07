@@ -55,6 +55,14 @@
           position: absolute;
           top: 0;
           width: 4px;
+          @keyframes barAnimation {
+            from {
+              margin-left: 0;
+            }
+            to {
+              margin-left: 80px;
+            }
+          }
         }
         &::before{
           left: 8px;
