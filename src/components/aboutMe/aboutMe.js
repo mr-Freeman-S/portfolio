@@ -3,16 +3,13 @@ import style from './aboutMe.module.scss'
 import styleContainer from "../../common/styles/Container.module.scss"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub, faInstagram, faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import BlockTitle from "../../common/components/BlockTitle/BlockTitle";
 
 const AboutMe = () => {
     return (
         <div className={style.wrapper}>
             <div className={`${styleContainer.wrapper} ${style.container}`}>
-                <div className={style.titleWrapper}>
-                    <p className={style.preTitle}>Get to know me</p>
-                    <h2 className={style.title}>About me</h2>
-                    <div className={style.barAnimation}></div>
-                </div>
+                <BlockTitle preTitle='Get to know me' title='About me'/>
                 <div className={style.infoWrapper}>
                     <div className={style.imgContainer}>
                     </div>

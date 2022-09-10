@@ -1,0 +1,46 @@
+@import "src/common/styles/sass/varialbles";
+
+.barAnimation {
+  background-color: $geometryFigureColor;
+  content: '';
+  display: block;
+  height: 4px;
+  left: 0;
+  margin: 0 auto 0 auto;
+  position: relative;
+  right: 0;
+  width: 75px;
+
+  &::before, &::after {
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: barAnimation;
+    -webkit-animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: barAnimation;
+    animation-timing-function: linear;
+    background-color: #101010;
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 4px;
+    @keyframes barAnimation {
+      from {
+        margin-left: 0;
+      }
+      to {
+        margin-left: 80px;
+      }
+    }
+  }
+
+  &::before {
+    left: 8px;
+  }
+
+  &::after {
+    left: 0;
+  }
+}

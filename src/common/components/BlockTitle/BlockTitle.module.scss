@@ -1,0 +1,15 @@
+.titleWrapper {
+  display: flex;
+  flex-direction: inherit;
+  margin-bottom: 83px;
+
+  .title {
+    font-size: 46px;
+    margin-bottom: 37px;
+  }
+
+  .preTitle {
+    margin: 0 auto 17px;
+    font-size: 15px;
+  }
+}
