@@ -5,7 +5,7 @@ import Skill from "./skill/Skill";
 import styleTitle from '../../common/styles/Title.module.scss'
 
 const Skills = () => {
-    const mySkills = ['HTML|CSS', 'JavaScript| ES6', 'ReactJS', 'Redux', 'Redux-thunk', 'MaterialUI', 'Tailwind', 'Bootstrap']
+    const mySkills = ['HTML5','CSS3', 'JavaScript','TypeScript', 'ReactJS', 'Redux','Sass', 'MaterialUI', 'Tailwind', 'Bootstrap']
     return (
         <div className={style.wrapper}>
             <div className={`${styleContainer.wrapper} ${style.container}`}>
