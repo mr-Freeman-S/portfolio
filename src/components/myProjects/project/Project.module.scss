@@ -1,10 +1,11 @@
+@import "src/common/styles/sass/varialbles";
+
 .wrapper {
-  border: 1px solid;
-  background-color: blue;
-  width: 250px;
+  background-color: $backgroundSecondaryColor;
+  width: 300px;
 
   .imgContainer {
-    height: 150px;
+    height: 300px;
     width: 100%;
     background-color: goldenrod;
     display: flex;
@@ -13,11 +14,9 @@
   }
 
   .title {
-    background-color: beige;
   }
 
   .description {
-    background-color: beige;
   }
 }
 

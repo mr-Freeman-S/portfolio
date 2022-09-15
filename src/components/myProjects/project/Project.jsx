@@ -4,18 +4,35 @@ import {Link} from "react-router-dom";
 
 
 const Project = (props) => {
+
+
+
+    const linkStyle = {
+        backgroundImage: `url(${props.img})`,
+        backgroundSize: 'cover',
+        height: '100%',
+        width: '100%',
+        backgroundPosition: 'center'
+
+}
     return (
         <div className={style.wrapper}>
             <div className={style.imgContainer}>
-                <Link style={{
-                    backgroundImage: `url(${props.img})`,
-                    backgroundSize: 'cover',
-                    height: '100%',
-                    width: '100%'
-                }} className={style.link} to={{pathname: props.path}} target="_blank"></Link>
+                <Link style={linkStyle} to={{pathname: props.path}} target="_blank">
+
+                </Link>
             </div>
-            <h2 className={style.title}>{props.title}</h2>
-            <span className={style.description}>{props.description}</span>
+            <div className={style.infoContainer}>
+                <h2 className={style.title}>{props.title}</h2>
+                <p className={style.description}>{props.description}</p>
+                <h3>Stack:
+                    <ul>
+                        {
+                            props.stack.map(el => <li>{el}</li>)
+                        }
+                    </ul></h3>
+            </div>
+
         </div>
     );
 };

@@ -10,11 +10,33 @@ import pizzaOrder from './../../assets/images/pizzaOrder.jpg'
 
 const MyProjects = () => {
     const myProjects = [
-        {title: 'Social network', img: socialNetwork, path: '#', description: 'Stack:Hello world'},
-        {title: 'Todo list', img: todoList, path: '#', description: 'Stack:Masdasdas asdas'},
-        {title: 'Learning cards', img: learningCards, path: '#', description: 'Stack:   asdas dasd asd as '},
         {
-            title: 'Pizza order', img: pizzaOrder, path: '#', description: 'Stack:asdas dsa das das  dsa ds'
+            title: 'Social network',
+            img: socialNetwork,
+            path: '#',
+            description: 'Stack:Hello world',
+            stack: ['TypeScript','React', 'Redux', 'React-redux', 'Redux-Thunk', 'MaterialUI', 'Axios', 'React-router-dom 6',
+                'Reselect']
+        },
+        {
+            title: 'Todo list',
+            img: todoList,
+            path: '#',
+            description: 'Stack:Masdasdas asdas',
+            stack: ['TypeScript','StoryBook','React', 'React-redux', 'Redux-Thunk', 'MaterialUI', 'Formik']
+        },
+        {
+            title: 'Learning cards',
+            img: learningCards, path: '#',
+            description: 'Stack:   asdas dasd asd as ',
+            stack: ['TypeScript','React', 'Redux', 'React-redux', 'Redux-Thunk', 'MaterialUI', 'Formik']
+        },
+        {
+            title: 'Pizza order',
+            img: pizzaOrder,
+            path: '#',
+            description: 'Stack:asdas dsa das das  dsa ds',
+            stack: []
         }
     ]
 
@@ -23,11 +45,9 @@ const MyProjects = () => {
             <div className={`${styleContainer.wrapper} ${style.container}`}>
                 <BlockTitle preTitle='Showcasing some of my work' title='Projects'/>
                 <div className={style.projectWrapper}>
-                    {myProjects.map((el,key) => (
-                        <Project img={el.img} title={el.title}
+                    {myProjects.map((el, key) => (
+                        <Project stack={el.stack} img={el.img} title={el.title}
                                  description={el.description} path={el.path}/>))}
-
-
                 </div>
             </div>
         </div>
