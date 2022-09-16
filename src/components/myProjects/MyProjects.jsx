@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import style from './MyProjects.module.scss'
 import styleContainer from "../../common/styles/Container.module.scss";
 import Project from "./project/Project";
@@ -9,13 +9,14 @@ import learningCards from './../../assets/images/learningCards.jpeg'
 import pizzaOrder from './../../assets/images/pizzaOrder.jpg'
 
 const MyProjects = () => {
+
     const myProjects = [
         {
             title: 'Social network',
             img: socialNetwork,
             path: '#',
             description: 'Stack:Hello world',
-            stack: ['TypeScript','React', 'Redux', 'React-redux', 'Redux-Thunk', 'MaterialUI', 'Axios', 'React-router-dom 6',
+            stack: ['TypeScript', 'React', 'Redux', 'React-redux', 'Redux-Thunk', 'MaterialUI', 'Axios', 'React-router-dom 6',
                 'Reselect']
         },
         {
@@ -23,13 +24,13 @@ const MyProjects = () => {
             img: todoList,
             path: '#',
             description: 'Stack:Masdasdas asdas',
-            stack: ['TypeScript','StoryBook','React', 'React-redux', 'Redux-Thunk', 'MaterialUI', 'Formik']
+            stack: ['TypeScript', 'StoryBook', 'React', 'React-redux', 'Redux-Thunk', 'MaterialUI', 'Formik']
         },
         {
             title: 'Learning cards',
             img: learningCards, path: '#',
             description: 'Stack:   asdas dasd asd as ',
-            stack: ['TypeScript','React', 'Redux', 'React-redux', 'Redux-Thunk', 'MaterialUI', 'Formik']
+            stack: ['TypeScript', 'React', 'Redux', 'React-redux', 'Redux-Thunk', 'MaterialUI', 'Formik']
         },
         {
             title: 'Pizza order',
@@ -46,8 +47,13 @@ const MyProjects = () => {
                 <BlockTitle preTitle='Showcasing some of my work' title='Projects'/>
                 <div className={style.projectWrapper}>
                     {myProjects.map((el, key) => (
-                        <Project stack={el.stack} img={el.img} title={el.title}
-                                 description={el.description} path={el.path}/>))}
+                        <Project key={key}
+                                 stack={el.stack}
+                                 img={el.img}
+                                 title={el.title}
+                                 description={el.description}
+                                 path={el.path}
+                        />))}
                 </div>
             </div>
         </div>

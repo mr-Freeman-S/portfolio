@@ -5,19 +5,28 @@
   width: 300px;
 
   .imgContainer {
+    position: relative;
     height: 300px;
     width: 100%;
     background-color: goldenrod;
     display: flex;
     justify-content: center;
     align-items: center;
+    .infoContainer {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: $backgroundSecondaryColor;
+      opacity: 0.9;
+      .title {
+      }
+
+      .description {
+      }
+    }
   }
 
-  .title {
-  }
 
-  .description {
-  }
 }
 
 
