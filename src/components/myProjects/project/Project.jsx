@@ -23,7 +23,7 @@ const Project = (props) => {
     }
     return (
         <div className={style.wrapper}>
-            <div className={style.imgContainer}
+            <div className={style.container}
                  onMouseLeave={linkMouseLeaveHandler}
                  onMouseEnter={linkMouseEnterHandler}>
                 <Link
@@ -31,13 +31,12 @@ const Project = (props) => {
                     target="_blank"></Link>
                 {isHovered && <div className={style.infoContainer}>
                     <h2 className={style.title}>{props.title}</h2>
-                    <p className={style.description}>{props.description}</p>
-                    <h3>Stack:
-                        <ul>
-                            {
-                                props.stack.map(el => <li>{el}</li>)
-                            }
-                        </ul></h3>
+                    <p className={style.description}>{props.description}{props.stack.map((el, elNum) => (
+                        (++elNum !== props.stack.length)
+                            ? <span><b>{el},</b></span>
+                            : <span><b>{el}.</b></span>))}
+                    </p>
+
                 </div>}
             </div>
 

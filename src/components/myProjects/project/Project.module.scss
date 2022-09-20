@@ -2,22 +2,26 @@
 
 .wrapper {
   background-color: $backgroundSecondaryColor;
-  width: 300px;
+  width: 344px;
+  border-bottom: 2px solid transparent;
+  transition: all .15s ease-in-out;
 
-  .imgContainer {
+  .container {
     position: relative;
     height: 300px;
     width: 100%;
-    background-color: goldenrod;
     display: flex;
     justify-content: center;
     align-items: center;
+
     .infoContainer {
       position: absolute;
       height: 100%;
-      width: 100%;
+      width: 260px;
       background-color: $backgroundSecondaryColor;
       opacity: 0.9;
+      padding: 38px 42px;
+
       .title {
       }
 

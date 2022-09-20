@@ -15,7 +15,7 @@ const MyProjects = () => {
             title: 'Social network',
             img: socialNetwork,
             path: '#',
-            description: 'Stack:Hello world',
+            description: 'Simple application that was created to learn the basics. In the application, we originally invented our redux further, we still added it. All technology stack: ',
             stack: ['TypeScript', 'React', 'Redux', 'React-redux', 'Redux-Thunk', 'MaterialUI', 'Axios', 'React-router-dom 6',
                 'Reselect']
         },
