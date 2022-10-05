@@ -12,7 +12,7 @@ const ContactForm = () => {
                 <div className={style.contactWrapper}>
                     <div className={style.formContent}>
                         <form className={style.contactForm} action="">
-                            <h4 className={style.contentTitle}></h4>
+                            <h4 className={style.contentTitle}>Message Me</h4>
                             <div className={style.contentRow}>
                                 <div className={style.name}><input type="text" placeholder='Name' required/></div>
                                 <div className={style.email}><input type="email" placeholder='Email' required/></div>
@@ -27,7 +27,40 @@ const ContactForm = () => {
                             </div>
                         </form>
                     </div>
-                    <div className={style.infoContent}></div>
+                    <div className={style.infoContent}>
+                        <div className={style.contactInfo}>
+                            <h4>Contact Info</h4>
+                            <p className={style.infoDescription}>Always available for work if the right project comes
+                                along, Feel free to contact me!</p>
+                            <ul>
+                                <li>
+                                    <div className={style.media}><span className={style.iconInfo}></span>
+                                        <div><h6></h6><span></span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className={style.media}><span className={style.iconInfo}></span>
+                                        <div><h6></h6><span></span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className={style.media}><span className={style.iconInfo}></span>
+                                        <div><h6></h6><span></span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className={style.media}><span className={style.iconInfo}></span>
+                                        <div><h6></h6><span></span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className={style.media}><span className={style.iconInfo}></span>
+                                        <div><h6></h6><span></span></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
