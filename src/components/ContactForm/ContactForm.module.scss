@@ -67,7 +67,6 @@
               width: 100%;
               box-sizing: border-box;
 
-
             }
 
             input, textarea {
@@ -77,7 +76,7 @@
               border-bottom: 1px solid #1d1d1d;
               border-radius: 0;
               font-size: 15px;
-              height: 44px;
+              height: auto;
               padding: 9px 14px;
               background-clip: padding-box;
               display: block;
@@ -87,6 +86,13 @@
               width: 100%;
               overflow: visible;
               margin: 0;
+              outline: none;
+
+              &:focus-visible {
+                box-shadow: none;
+                border-bottom: 1px solid #00d187;
+              }
+
             }
 
             .buttonSend {
@@ -115,6 +121,16 @@
         .contactInfo {
           padding-left: 15px;
 
+          .infoTitle {
+            margin-bottom: 22px;
+            line-height: 1.5;
+            color: $textPrimaryColor;
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-top: 0;
+
+          }
+
           .infoDescription {
 
           }
@@ -134,6 +150,7 @@
 
               .iconInfo {
                 width: 67px;
+
                 img {
                   height: 36px;
                   padding: 12px 22px 12px 0;
@@ -141,9 +158,10 @@
               }
 
               .mediaBody {
-                border-left: 2px solid rgba(255,255,255,.15);
-                padding: 0px 0 12px 22px;
+                border-left: 2px solid rgba(255, 255, 255, .15);
+                padding: 0 0 12px 22px;
                 flex: 1;
+
                 .infoType {
                   font-size: 15px;
                   font-weight: 600;

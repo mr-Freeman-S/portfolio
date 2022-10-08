@@ -37,7 +37,7 @@ const ContactForm = () => {
                     </div>
                     <div className={style.infoContent}>
                         <div className={style.contactInfo}>
-                            <h4>Contact Info</h4>
+                            <h4 className={style.infoTitle}>Contact Info</h4>
                             <p className={style.infoDescription}>Always available for work if the right project comes
                                 along, Feel free to contact me!</p>
                             <ul>
