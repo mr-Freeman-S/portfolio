@@ -13,7 +13,7 @@ const ContactForm = () => {
 
 
     return (
-        <div className={style.wrapper}>
+        <div id='contact' className={style.wrapper}>
             <div className={`${styleContainer.wrapper} ${style.formWrapper}`}>
                 <BlockTitle preTitle='Feel free to contact me anytimes' title={'Get in Touch'}/>
 

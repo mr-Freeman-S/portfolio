@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import style from './MyProjects.module.scss'
 import styleContainer from "../../common/styles/Container.module.scss";
 import Project from "./project/Project";
@@ -42,7 +42,7 @@ const MyProjects = () => {
     ]
 
     return (
-        <div className={style.wrapper}>
+        <div id='projects' className={style.wrapper}>
             <div className={`${styleContainer.wrapper} ${style.container}`}>
                 <BlockTitle preTitle='Showcasing some of my work' title='Projects'/>
                 <div className={style.projectWrapper}>

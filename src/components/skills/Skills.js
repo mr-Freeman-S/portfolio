@@ -16,7 +16,7 @@ const Skills = () => {
         {title: 'MaterialUI', description: 'MUI offers a comprehensive suite of UI tools to help you ship new features faster. I also know a few other frameworks: Tailwind, Bootstrap and etc.'},
     ]
     return (
-        <div className={style.wrapper}>
+        <div id='skills' className={style.wrapper}>
             <div className={`${styleContainer.wrapper} ${style.container}`}>
                 <BlockTitle preTitle='What I know and use in my project' title='Hard skills'/>
                 <div className={style.skills}>

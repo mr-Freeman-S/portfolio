@@ -7,7 +7,7 @@ import BlockTitle from "../../common/components/BlockTitle/BlockTitle";
 
 const AboutMe = () => {
     return (
-        <div className={style.wrapper}>
+        <div id='aboutMe' className={style.wrapper}>
             <div className={`${styleContainer.wrapper} ${style.container}`}>
                 <BlockTitle preTitle='Get to know me' title='About me'/>
                 <div className={style.infoWrapper}>

@@ -1,6 +1,7 @@
 @import 'src/common/styles/sass/varialbles';
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 .App {
     font-family: $firstFont;
