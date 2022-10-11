@@ -1,17 +1,21 @@
+@import "src/common/styles/sass/varialbles";
+
 .wrapper {
-  height: 20vh;
-  background-color: green;
-  min-height: 200px;
+  min-height: 20vh;
+  background-color: $backGroundColor;
   display: flex;
   align-items: center;
-
+  .title{
+    color: $textPrimaryColor;
+    margin-bottom: 0;
+  }
   .container {
     flex-direction: column;
 
     .itemsWrapper {
+      margin: 15px 0;
       display: flex;
       justify-content: space-between;
-      border: 1px solid;
       width: 360px;
     }
   }

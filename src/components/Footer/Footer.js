@@ -7,12 +7,11 @@ const Footer = () => {
     return (
         <div className={style.wrapper}>
             <div className={`${styleContainer.wrapper} ${style.container}`}>
-                <h3>Vuachalsau Baranok</h3>
+                <h3 className={style.title}>Vuachalsau Baranok</h3>
                 <div className={style.itemsWrapper}>
-                    <FooterItem/>
-                    <FooterItem/>
-                    <FooterItem/>
-                    <FooterItem/>
+                    <FooterItem item='linkedIn'/>
+                    <FooterItem item='instagram'/>
+                    <FooterItem item='gitHub'/>
                 </div>
                 <span>©2022 All right reserved </span>
             </div>
