@@ -1,16 +1,19 @@
 import React from 'react';
-import style from './ContactForm.module.scss'
+import style from './ContactMe.module.scss'
 import styleContainer from '../../common/styles/Container.module.scss'
 import BlockTitle from "../../common/components/BlockTitle/BlockTitle";
 import signature from "./../../assets/logo/signature.svg"
 import location from "./../../assets/logo/map-location.svg"
 import phone from "./../../assets/logo/phone.svg"
 import email from "./../../assets/logo/paper-plane.svg"
+import {useForm} from "react-hook-form";
+import ContactForm from "./contactForm/ContactForm";
 
 
 
-const ContactForm = () => {
-
+const ContactMe = () => {
+    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    console.log(watch("example"));
 
     return (
         <div id='contact' className={style.wrapper}>
@@ -19,21 +22,7 @@ const ContactForm = () => {
 
                 <div className={style.contactWrapper}>
                     <div className={style.formContent}>
-                        <form className={style.contactForm} action="">
-                            <h4 className={style.contentTitle}>Message Me</h4>
-                            <div className={style.contentRow}>
-                                <div className={style.name}><input type="text" placeholder='Name' required/></div>
-                                <div className={style.email}><input type="email" placeholder='Email' required/></div>
-                                <div className={style.subject}><input type="text" placeholder='Subject' required/></div>
-                                <div className={style.message}><textarea name="message" id=""
-                                                                         rows="5" placeholder='Message'
-                                                                         required/>
-                                </div>
-                                <div className={style.button}>
-                                    <button className={style.buttonSend}>Send Message</button>
-                                </div>
-                            </div>
-                        </form>
+                        <ContactForm/>
                     </div>
                     <div className={style.infoContent}>
                         <div className={style.contactInfo}>
@@ -70,4 +59,4 @@ const ContactForm = () => {
     );
 };
 
-export default ContactForm;
+export default ContactMe;

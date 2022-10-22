@@ -27,7 +27,7 @@ const Project = (props) => {
                  onMouseLeave={linkMouseLeaveHandler}
                  onMouseEnter={linkMouseEnterHandler}>
                 <Link
-                    style={linkStyle} to={{pathname: props.path}}
+                    style={linkStyle} to={props.path}
                     target="_blank"></Link>
                 {isHovered && <div className={style.infoContainer}>
                     <h2 className={style.title}>{props.title}</h2>
