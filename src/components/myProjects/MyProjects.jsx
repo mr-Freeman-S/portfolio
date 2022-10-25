@@ -15,7 +15,7 @@ const MyProjects = () => {
             title: 'Social network',
             img: socialNetwork,
             path: '#',
-            description: 'Simple application that was created to learn the basics. In the application, we originally invented our redux further, we still added it. All technology stack: ',
+            description: 'Simple application that was created to learn the basics. In the application, we originally invented our redux further, we still added it.',
             stack: ['TypeScript', 'React', 'Redux', 'React-redux', 'Redux-Thunk', 'MaterialUI', 'Axios', 'React-router-dom 6',
                 'Reselect']
         },
@@ -23,13 +23,13 @@ const MyProjects = () => {
             title: 'Todo list',
             img: todoList,
             path: '#',
-            description: 'Stack:Masdasdas asdas',
+            description: 'Todo for your productivity.',
             stack: ['TypeScript', 'StoryBook', 'React', 'React-redux', 'Redux-Thunk', 'MaterialUI', 'Formik']
         },
         {
             title: 'Learning cards',
             img: learningCards, path: '#',
-            description: 'Stack:   asdas dasd asd as ',
+            description: '',
             stack: ['TypeScript', 'React', 'Redux', 'React-redux', 'Redux-Thunk', 'MaterialUI', 'Formik']
         },
         {

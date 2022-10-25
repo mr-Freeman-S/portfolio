@@ -29,15 +29,19 @@ const Project = (props) => {
                 <Link
                     style={linkStyle} to={props.path}
                     target="_blank"></Link>
-                {isHovered && <div className={style.infoContainer}>
+                 <div className={`${style.infoContainer} ${isHovered ? style.active : style.noActive}`}>
                     <h2 className={style.title}>{props.title}</h2>
-                    <p className={style.description}>{props.description}{props.stack.map((el, elNum) => (
-                        (++elNum !== props.stack.length)
-                            ? <span><b>{el},</b></span>
-                            : <span><b>{el}.</b></span>))}
+                    <p className={style.description}>{props.description}
+                    </p>
+                    <p className={style.stack}>Technologies: <ul>
+                        {props.stack.map((el, elNum) => (
+                            (++elNum !== props.stack.length)
+                                ? <li><b>{el},</b></li>
+                                : <li><b>{el}.</b></li>))}
+                    </ul>
                     </p>
 
-                </div>}
+                </div>
             </div>
 
 

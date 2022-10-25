@@ -1,11 +1,10 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import style from './ContactForm.module.scss'
-import {set, useForm} from "react-hook-form";
-import {logDOM} from "@testing-library/react";
+import {useForm} from "react-hook-form";
 
 
 const ContactForm = () => {
-    const {register, handleSubmit, formState: {errors}, setError} = useForm();
+    const {register, handleSubmit} = useForm();
     const onSubmit = async data => {
         const response = await fetch('https://gmail-node-sender.herokuapp.com/sendMessage', {
             headers: {

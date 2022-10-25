@@ -2,30 +2,43 @@
 
 .wrapper {
   background-color: $backgroundSecondaryColor;
-  width: 344px;
+  width: 360px;
   border-bottom: 2px solid transparent;
   transition: all .15s ease-in-out;
 
   .container {
     position: relative;
-    height: 300px;
+    height: 500px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 
+    .active {
+      opacity: 0.9;
+    }
+
+    .noActive {
+    opacity: 0;
+    }
+
     .infoContainer {
+
       position: absolute;
       height: 100%;
       width: 100%;
       background-color: $backgroundSecondaryColor;
-      opacity: 0.9;
-      padding: 0;
+      padding: 15px;
+      transition: all .15s ease-in-out;
 
       .title {
       }
 
       .description {
+      }
+
+      .stack {
+
       }
     }
   }
