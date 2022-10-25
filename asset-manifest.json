@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5b9824e4.css",
-    "main.js": "/portfolio/static/js/main.62d885e9.js",
+    "main.css": "/portfolio/static/css/main.fabd5738.css",
+    "main.js": "/portfolio/static/js/main.d80ad773.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/videoBG.mp4": "/portfolio/static/media/videoBG.05824d004b1b33ac373b.mp4",
     "static/media/todoList.jpg": "/portfolio/static/media/todoList.c36a6f150ab1cbfd7d90.jpg",
-    "static/media/pizzaOrder.jpg": "/portfolio/static/media/pizzaOrder.81949666de39998c29de.jpg",
     "static/media/socialNetwork.jpeg": "/portfolio/static/media/socialNetwork.20bb86949e2ba2426f0f.jpeg",
     "static/media/learningCards.jpeg": "/portfolio/static/media/learningCards.2476fb065cbb4670d97f.jpeg",
     "static/media/sassLogo.svg": "/portfolio/static/media/sassLogo.1d5e96ceb110f33f4d226ceda91476a8.svg",
@@ -19,12 +18,12 @@
     "static/media/phone.svg": "/portfolio/static/media/phone.637941befda389018110b30f5654209c.svg",
     "static/media/tailwindLogo.svg": "/portfolio/static/media/tailwindLogo.0c740c642f6a6f5909c8de5ddcbf5e63.svg",
     "static/media/materialui.svg": "/portfolio/static/media/materialui.ff77a9e4b512ad7f28ea45d34ea379bc.svg",
-    "main.5b9824e4.css.map": "/portfolio/static/css/main.5b9824e4.css.map",
-    "main.62d885e9.js.map": "/portfolio/static/js/main.62d885e9.js.map",
+    "main.fabd5738.css.map": "/portfolio/static/css/main.fabd5738.css.map",
+    "main.d80ad773.js.map": "/portfolio/static/js/main.d80ad773.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b9824e4.css",
-    "static/js/main.62d885e9.js"
+    "static/css/main.fabd5738.css",
+    "static/js/main.d80ad773.js"
   ]
 }
