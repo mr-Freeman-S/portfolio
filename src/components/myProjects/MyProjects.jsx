@@ -6,7 +6,6 @@ import BlockTitle from "../../common/components/BlockTitle/BlockTitle";
 import socialNetwork from './../../assets/images/socialNetwork.jpeg'
 import todoList from './../../assets/images/todoList.jpg'
 import learningCards from './../../assets/images/learningCards.jpeg'
-import pizzaOrder from './../../assets/images/pizzaOrder.jpg'
 
 const MyProjects = () => {
 
@@ -23,22 +22,17 @@ const MyProjects = () => {
             title: 'Todo list',
             img: todoList,
             path: '#',
-            description: 'Todo for your productivity.',
+            description: 'Todo for your productivity. Create, Read, Update, Delete your lists. The best app for start a new habit.',
             stack: ['TypeScript', 'StoryBook', 'React', 'React-redux', 'Redux-Thunk', 'MaterialUI', 'Formik']
         },
         {
             title: 'Learning cards',
             img: learningCards, path: '#',
-            description: '',
-            stack: ['TypeScript', 'React', 'Redux', 'React-redux', 'Redux-Thunk', 'MaterialUI', 'Formik']
+            description: 'Application for learning anything. You create decks and cards in which you write a question and an answer, then you press teach and you are given a question. After you have spoken the answer, look and rate how you like the question. questions will come across more often than you do not know.',
+            stack: ['TypeScript', 'Redux', 'React-redux', 'Redux-Thunk', 'MaterialUI', 'Formik']
         },
-        {
-            title: 'Pizza order',
-            img: pizzaOrder,
-            path: '#',
-            description: 'Stack:asdas dsa das das  dsa ds',
-            stack: []
-        }
+
+
     ]
 
     return (
