@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import style from './Project.module.scss'
 import {Link} from "react-router-dom";
+import {hover} from "@testing-library/user-event/dist/hover";
 
 
 const Project = (props) => {
@@ -9,10 +10,9 @@ const Project = (props) => {
     const linkStyle = {
         backgroundImage: `url(${props.img})`,
         backgroundSize: 'cover',
-        height: '100%',
+        height: '300px',
         width: '100%',
-        backgroundPosition: 'center'
-
+        backgroundPosition: 'center',
     }
 
     const linkMouseEnterHandler = () => {
@@ -26,22 +26,19 @@ const Project = (props) => {
             <div className={style.container}
                  onMouseLeave={linkMouseLeaveHandler}
                  onMouseEnter={linkMouseEnterHandler}>
+                <h2 className={style.title}>{props.title}</h2>
+                <p className={style.description}>{props.description}
+                </p>
                 <Link
                     style={linkStyle} to={props.path}
                     target="_blank"></Link>
-                 <div className={`${style.infoContainer} ${isHovered ? style.active : style.noActive}`}>
-                    <h2 className={style.title}>{props.title}</h2>
-                    <p className={style.description}>{props.description}
-                    </p>
-                    <p className={style.stack}>Technologies: <ul>
-                        {props.stack.map((el, elNum) => (
-                            (++elNum !== props.stack.length)
-                                ? <li><b>{el},</b></li>
-                                : <li><b>{el}.</b></li>))}
-                    </ul>
-                    </p>
-
-                </div>
+                <p className={style.stack}>Technologies: <ul>
+                    {props.stack.map((el, elNum) => (
+                        (++elNum !== props.stack.length)
+                            ? <li><b>{el},</b></li>
+                            : <li><b>{el}.</b></li>))}
+                </ul>
+                </p>
             </div>
 
 

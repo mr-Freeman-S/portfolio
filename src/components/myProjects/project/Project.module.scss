@@ -7,19 +7,27 @@
   transition: all .15s ease-in-out;
 
   .container {
+
     position: relative;
-    height: 500px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-content: space-between;
 
-    .active {
-      opacity: 0.9;
+    .stack {
+      li {
+        display: inline-block;
+      }
     }
 
-    .noActive {
-    opacity: 0;
+    .title {
+
+    }
+
+    .description {
+      min-height: 170px;
     }
 
     .infoContainer {
@@ -31,15 +39,8 @@
       padding: 15px;
       transition: all .15s ease-in-out;
 
-      .title {
-      }
 
-      .description {
-      }
 
-      .stack {
-
-      }
     }
   }
 
