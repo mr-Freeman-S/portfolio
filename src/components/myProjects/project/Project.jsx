@@ -29,9 +29,19 @@ const Project = (props) => {
                 <h2 className={style.title}>{props.title}</h2>
                 <p className={style.description}>{props.description}
                 </p>
-                <Link
-                    style={linkStyle} to={props.path}
-                    target="_blank"></Link>
+                <a
+                    style={linkStyle} href={props.path.site}
+                    target="_blank"></a>
+                <div className={style.buttonWrapper}>
+                    <a
+                        href={props.path.github}
+                        target="_blank" className={style.buttonRedirect}>CODE
+                    </a>
+                    <a
+                        href={props.path.site}
+                        target="_blank" className={style.buttonRedirect}>VIEW
+                    </a>
+                </div>
                 <p className={style.stack}>Technologies: <ul>
                     {props.stack.map((el, elNum) => (
                         (++elNum !== props.stack.length)

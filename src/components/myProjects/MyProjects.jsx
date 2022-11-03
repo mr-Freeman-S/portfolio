@@ -13,7 +13,10 @@ const MyProjects = () => {
         {
             title: 'Social network',
             img: socialNetwork,
-            path: '#',
+            path: {
+                github: 'https://github.com/mr-Freeman-S/Social-network-Murloc',
+                site: 'https://mr-freeman-s.github.io/Social-network-Murloc/'
+            },
             description: 'Simple application that was created to learn the basics. In the application, we originally invented our redux further, we still added it.',
             stack: ['TypeScript', 'React', 'Redux', 'React-redux', 'Redux-Thunk', 'MaterialUI', 'Axios', 'React-router-dom 6',
                 'Reselect']
@@ -21,13 +24,14 @@ const MyProjects = () => {
         {
             title: 'Todo list',
             img: todoList,
-            path: '#',
+            path: {github: 'https://github.com/mr-Freeman-S/cards-nya',site: 'https://github.com/mr-Freeman-S/cards-nya'},
             description: 'Todo for your productivity. Create, Read, Update, Delete your lists. The best app for start a new habit.',
             stack: ['TypeScript', 'StoryBook', 'React', 'React-redux', 'Redux-Thunk', 'MaterialUI', 'Formik']
         },
         {
             title: 'Learning cards',
-            img: learningCards, path: '#',
+            img: learningCards,
+            path: {github: 'https://github.com/mr-Freeman-S/cards-nya', site: 'mr-freeman-s.github.io/cards-nya/'},
             description: 'Application for learning anything. You create decks and cards in which you write a question and an answer, then you press teach and you are given a question. After you have spoken the answer, look and rate how you like the question. questions will come across more often than you do not know.',
             stack: ['TypeScript', 'Redux', 'React-redux', 'Redux-Thunk', 'MaterialUI', 'Formik']
         },

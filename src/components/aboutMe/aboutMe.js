@@ -11,7 +11,7 @@ const AboutMe = () => {
         <div id='aboutMe' className={style.wrapper}>
             <div className={`${styleContainer.wrapper} ${style.container}`}>
                 <BlockTitle preTitle='Get to know me' title='About me'/>
-                <div  style={{backgroundImage:avatar,backgroundSize:"cover"}}  className={style.infoWrapper}>
+                <div className={style.infoWrapper}>
                     <div style={{backgroundImage:`url(${avatar})`,backgroundSize:"cover"}} className={style.imgContainer}>
                     </div>
                     <div className={style.infoContent}>
