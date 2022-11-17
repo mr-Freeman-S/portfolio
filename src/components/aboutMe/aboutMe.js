@@ -5,6 +5,9 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub, faInstagram, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import BlockTitle from "../../common/components/BlockTitle/BlockTitle";
 import avatar from "./../../assets/images/avatar.jpg"
+import cv from "./../../assets/file/CV.pdf"
+import {faTelegram} from "@fortawesome/free-brands-svg-icons/faTelegram";
+
 
 const AboutMe = () => {
     return (
@@ -12,16 +15,15 @@ const AboutMe = () => {
             <div className={`${styleContainer.wrapper} ${style.container}`}>
                 <BlockTitle preTitle='Get to know me' title='About me'/>
                 <div className={style.infoWrapper}>
-                    <div style={{backgroundImage:`url(${avatar})`,backgroundSize:"cover"}} className={style.imgContainer}>
+                    <div style={{backgroundImage: `url(${avatar})`, backgroundSize: "cover"}}
+                         className={style.imgContainer}>
                     </div>
                     <div className={style.infoContent}>
                         <h2 className={style.question}>Who am i?</h2>
                         <h6 className={style.answer}>I'm Slava Baranok, a Web Developer</h6>
-                        <div className={style.descriptionContainer}><p>I am a freelancer based in the United Kingdom and
-                            i have been building noteworthy UX/UI
-                            designs and websites for years, which comply with the latest design trends. I help convert a
-                            vision and an idea into meaningful and useful products. Having a sharp eye for product
-                            evolution helps me prioritize tasks, iterate fast and deliver faster.</p>
+                        <div className={style.descriptionContainer}><p>I'm a front-end developer. I have about a year of
+                            experience developing spa apps and robust business problem solving skills. English at
+                            pre-intermediate level. I spend my leisure time on study new technologies and English.</p>
                         </div>
                         <address>
                             <div className={style.row}>
@@ -48,15 +50,19 @@ const AboutMe = () => {
                             </div>
                         </address>
                         <div className={style.CVContent}>
-                            <a className={style.buttonCV} href="#">Download CV</a>
+                            <a className={style.buttonCV} href={cv} download='Baranok-CV'>Download CV</a>
 
                             <ul>
-                                <li><a href="https://github.com/mr-Freeman-S" target={"_blank"} rel="noreferrer"><FontAwesomeIcon
+                                <li><a href="https://github.com/mr-Freeman-S" target={"_blank"}
+                                       rel="noreferrer"><FontAwesomeIcon
                                     icon={faGithub}/></a></li>
-                                <li><a href="https://www.instagram.com/mr.baranok" target={"_blank"} rel="noreferrer"><FontAwesomeIcon
+                                <li><a href="https://www.instagram.com/mr.baranok" target={"_blank"}
+                                       rel="noreferrer"><FontAwesomeIcon
                                     icon={faInstagram}/></a></li>
                                 <li><a href="https://www.linkedin.com/in/slava-baranok"
                                        target={"_blank"} rel="noreferrer"><FontAwesomeIcon icon={faLinkedin}/></a></li>
+                                <li><a href="https://t.me/mrfreeman404"
+                                       target={"_blank"} rel="noreferrer"><FontAwesomeIcon icon={faTelegram}/></a></li>
                             </ul>
                         </div>
                     </div>
