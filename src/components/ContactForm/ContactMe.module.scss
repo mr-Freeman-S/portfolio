@@ -20,6 +20,7 @@
         flex: 0 0 58.33333%;
         max-width: 58.33333%;
         width: 100%;
+        min-width: 375px;
       }
 
       .infoContent {
@@ -61,7 +62,7 @@
               display: flex;
 
               .iconInfo {
-                width: 67px;
+                min-width: 67px;
 
                 img {
                   height: 60px;

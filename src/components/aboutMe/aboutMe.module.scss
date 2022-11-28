@@ -16,10 +16,12 @@
 
     .infoWrapper {
       display: flex;
+      flex-wrap: wrap;
+
 
       .imgContainer {
         height: 507px;
-        min-width: 430px;
+        min-width: 375px;
         object-fit: cover;
         padding: 0 15px;
         margin-right: 30px;
@@ -27,6 +29,7 @@
 
       .infoContent {
         padding: 0 15px;
+        max-width: 550px;
 
         .question {
           color: $geometryFigureColor;
