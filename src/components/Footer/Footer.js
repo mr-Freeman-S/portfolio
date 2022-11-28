@@ -12,6 +12,7 @@ const Footer = () => {
                     <FooterItem item='linkedIn'/>
                     <FooterItem item='instagram'/>
                     <FooterItem item='gitHub'/>
+                    <FooterItem item='telegram'/>
                 </div>
                 <span>©2022 All right reserved </span>
             </div>
