@@ -32,7 +32,7 @@ const MyProjects = () => {
             title: 'Learning cards',
             img: learningCards,
             path: {github: 'https://github.com/mr-Freeman-S/cards-nya', site: 'mr-freeman-s.github.io/cards-nya/'},
-            description: 'Application for learning anything. You create decks and cards in which you write a question and an answer, then you press teach and you are given a question. After you have spoken the answer, look and rate how you like the question. questions will come across more often than you do not know.',
+            description: 'Application for learning anything. You create decks and cards in which you write a question and an answer. After you have spoken the answer, look and rate how you like the question. questions will come across more often than you do not know.',
             stack: ['TypeScript', 'Redux', 'React-redux', 'Redux-Thunk', 'MaterialUI', 'Formik']
         },
 

@@ -5,7 +5,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub, faInstagram, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import BlockTitle from "../../common/components/BlockTitle/BlockTitle";
 import avatar from "./../../assets/images/avatar.jpg"
-import cv from "./../../assets/file/CV.pdf"
+import cv from "./../../assets/file/Slava_Baranok_CV.pdf"
 import {faTelegram} from "@fortawesome/free-brands-svg-icons/faTelegram";
 
 
